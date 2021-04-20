@@ -2,7 +2,7 @@ import React from 'react';
 import Currency from './Currency';
 import slugify from 'slugify';
 import Feature from './Feature';
-
+import Parts from './Parts';
 
 class Customize extends React.Component {
     render() {
@@ -34,7 +34,7 @@ class Customize extends React.Component {
         return (
             <form className="main__form">
                 <h2>Customize your laptop</h2>
-                {features}
+                <Parts features={features} />
             </form>
         )
     }
